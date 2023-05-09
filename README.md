@@ -84,7 +84,7 @@ Quelques points d’attention :
 
 
 # Le Webservice REST pour e-Box Enterprise
-Le Webservice REST pour e-Box Enterprise vous offre plusieurs fonctionnalités.
+Le Webservice REST pour e-Box Enterprise vous offre plusieurs fonctionnalités:
 1. **Messages** : vous pouvez non seulement consulter tous les messages dans votre e-Box en appelant simplement /messages, mais aussi filtrer les messages en fonction de la date d’expiration, de l’expéditeur, de la [partition](https://dev.eboxenterprise.be/docs/federation/partition), etc. Comme sur l’interface utilisateur, vous pouvez également changer la visabilité et la partition des messages. 
    - *Partition* : Les partitions sont des « sous-boîtes » de l’e-Box qui ont leur propre identité et leur propre gestion de l'accès des utilisateurs. Elles permettent de 'classifier' les messages et ainsi chaque utilisateur reçoit juste les messages de sa partition au lieu de tous les messages reçu par son entreprise. Cela améliore la sécurité en cas des messages confidentiels et aide à organiser les messages reçus. Les DocConsumers ne sont pas limités aux partitions vu qu’ils peuvent consulter tous les messages de l’e-Box sans appliquer de filtre.
    - *Message forAction* : Certains messages requièrent une action de la part de l’utilisateur. (e.g., imprimer un document) Une fois que vous aurez terminé l’action, vous pourrez « exécuter » le message action en faisant un « *patch* » via Webservice REST e-Box Enterprise.
