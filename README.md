@@ -53,7 +53,9 @@ Une fois que vous avez obtenu votre token, vous pouvez trouver la liste des Docu
 |------------|------------------------------------------------------------------------------------------------|
 | Acceptance | ``https://services-acpt.socialsecurity.be/REST/ebox/enterprise/federation/v1/messageProviders``|
 | Production | ``https://services.socialsecurity.be/REST/ebox/enterprise/federation/v1/messageProviders``     |
+
 Parmi eux, vous trouverez notre Document Provider :
+
 | Environment| Endpoint e-Box enterprise                                                           |
 |------------|-------------------------------------------------------------------------------------|
 | Acceptance | ``https://services-acpt.socialsecurity.be/REST/ebox/enterprise/messageRegistry/v2/``|
