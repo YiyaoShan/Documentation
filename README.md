@@ -3,7 +3,7 @@ title: e-Box Enterprise via Webservice
 sidebar_label: Onboarding
 ---
 
-![Diagram DocConsumer Onboarding Process](https://github.com/YiyaoShan/Documentation/blob/main/DocConsumer%20Onboarding%20Processus.png)) 
+![Diagram DocConsumer Onboarding Process](https://github.com/YiyaoShan/Documentation/blob/main/DocConsumer%20Onboarding%20Processus.png)
 
 Plus envie de consulter les messages un par un ? Devenez Document Consumer. Vous pouvez consulter tous les messages que vous avez reçu dans l’e-Box Enterprise **en un seul clic** via un **Webservice REST**. Suivez le processus self-service ci-dessous afin de vous intégrer en tant que Document Consumer de l’e-Box Enterprise. L’intégration peut se faire en environnements Acceptance et Production. 
 
@@ -40,10 +40,10 @@ L'exemple [OAuth introspect](https://github.com/e-Box-Enterprise-Belgium/example
 </table>
 
 En tant que Document Consumer, votre AccessToken contiendra les scopes nécessaires pour effectuer toutes les requêtes possibles afin de gérer votre e-Box :
-- ``scope:document:management:consult:ws-eboxrestentreprise:summaryownebox`` pour obtenir le résumé de votre e-Box ;
-- ``scope:document:management:consult:ws-eboxrestentreprise:documentconsumer`` pour obtenir et effectuer des actions autorisées sur tous les messages de votre e-Box ;
-- ``scope:document:management:consult:ws-eboxrestentreprise:referencedata`` pour récupérer les détails des messageTypes, senderOrganizations et senderApplications.
-- ``scope:documentmanagement:ebox:enterprise:federation-rest:registry`` pour obtenir la liste des [Documents Providers](https://dev.eboxenterprise.be/docs/dp/document_provider).
+- **summary_own_ebox** (``scope:document:management:consult:ws-eboxrestentreprise:summaryownebox``) pour obtenir le résumé de votre e-Box ;
+- **documentconsumer** (``scope:document:management:consult:ws-eboxrestentreprise:documentconsumer``) pour obtenir et effectuer des actions autorisées sur tous les messages de votre e-Box ;
+- **reference_data** (``scope:document:management:consult:ws-eboxrestentreprise:referencedata``) pour récupérer les détails des messageTypes, senderOrganizations et senderApplications.
+- **Provider Registry** (``scope:documentmanagement:ebox:enterprise:federation-rest:registry``) pour obtenir la liste des [Documents Providers](https://dev.eboxenterprise.be/docs/dp/document_provider).
 
 Plus d’info :
 -	[OAuth2 Integration Client Credential.pdf](https://www.socialsecurity.be/site_fr/general/helpcentre/rest/documents/pdf/doc_portal_oauth2_client_credential_FR.pdf)
@@ -75,8 +75,8 @@ Quelques points d’attention :
 # Le Webservice REST pour e-Box Enterprise
 Le Webservice REST pour e-Box Enterprise vous offre plusieurs fonctionnalités.
 1. **Messages** : vous pouvez non seulement consulter tous les messages dans votre e-Box en appelant simplement /messages, mais aussi filtrer les messages en fonction de la date d’expiration, de l’expéditeur, de la [partition](https://dev.eboxenterprise.be/docs/federation/partition), etc. Comme sur l’interface utilisateur, vous pouvez également changer la visabilité et la partition des messages. 
-   - Partition : Les partitions sont des « sous-boîtes » de l’e-Box qui ont leur propre identité et leur propre gestion de l'accès des utilisateurs. Elles permettent de 'classifier' les messages et ainsi chaque utilisateur reçoit juste les messages de sa partition au lieu de tous les messages reçu par son entreprise. Cela améliore la sécurité en cas des messages confidentiels et aide à organiser les messages reçus. Les DocConsumers ne sont pas limités aux partitions vu qu’ils peuvent consulter tous les messages de l’e-Box sans appliquer de filtre.
-   - Message forAction : Certains messages requièrent une action de la part de l’utilisateur. (e.g., imprimer un document) Une fois que vous aurez terminé l’action, vous pourrez « exécuter » le message action en faisant un « *patch* » via Webservice REST e-Box Enterprise.
+   - *Partition* : Les partitions sont des « sous-boîtes » de l’e-Box qui ont leur propre identité et leur propre gestion de l'accès des utilisateurs. Elles permettent de 'classifier' les messages et ainsi chaque utilisateur reçoit juste les messages de sa partition au lieu de tous les messages reçu par son entreprise. Cela améliore la sécurité en cas des messages confidentiels et aide à organiser les messages reçus. Les DocConsumers ne sont pas limités aux partitions vu qu’ils peuvent consulter tous les messages de l’e-Box sans appliquer de filtre.
+   - *Message forAction* : Certains messages requièrent une action de la part de l’utilisateur. (e.g., imprimer un document) Une fois que vous aurez terminé l’action, vous pourrez « exécuter » le message action en faisant un « *patch* » via Webservice REST e-Box Enterprise.
 2. **ReferenceData** : cela vous permet de récupérer les détails des messageTypes, senderOrganizations et senderApplications.
 3. **Statistics** : grâce à cela vous saurez combien de messages vont bientôt expirer, combien de messages requièrent une action de votre part et combien de messages sont des recommandés.
 4. **Reply** : vous pouvez répondre aux messages (si applicable) et exécuter l’action du message quand cela a été fait.  
