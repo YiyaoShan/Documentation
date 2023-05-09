@@ -93,7 +93,7 @@ Le Webservice REST pour e-Box Enterprise vous offre plusieurs fonctionnalités:
 4. **Reply** : vous pouvez répondre aux messages (si applicable) et exécuter l’action du message quand cela a été fait.  
 
 # Besoin de plus d’info ? 
-- [Qu’est-ce que l’e-Box](https://wwwacc.eboxenterprise.be/fr/index.html)
+- [Qu’est-ce que l’e-Box Enterprise](https://wwwacc.eboxenterprise.be/fr/index.html)
 - [Qu’est-ce qu’une partition](https://dev.eboxenterprise.be/docs/federation/partition)
 - [e-Box Enterprise Services Specifications](https://dev.eboxenterprise.be/docs/spec/specifications)
 
