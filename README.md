@@ -32,7 +32,7 @@ Une fois l'utilisateur technique créé, votre GA/co-GA doit activer le canal «
 
 
 ## Etape2: Configuration OAuth
-### 2.1 Enregistrement entreprise dans OAuth Server
+### 2.1 Enregistrement de l'entreprise dans OAuth Server
 L’étape précedente implique l’enregistrement de votre entreprise (identifiée par son n°BCE-KBO) dans le serveur d’autorisation OAuth de la Sécurité Sociale , grâce à laquelle vous obtenez un **client-id OAuth** qui est associé à votre entreprise et votre certificat, permettant de générer un **AccessToken OAuth** pour pouvoir consulter l’API REST de l’e-Box Enterprise. 
 
 ### 2.2 Récupération AccessToken OAuth
