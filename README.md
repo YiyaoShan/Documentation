@@ -20,6 +20,7 @@ Actuellement, l'activation des canaux WebServices se fait en mode "tout ou rien"
 ### 1.3 Créer un utilisateur technique
 Le GA/co-GA doit maintenant créer un utilisateur technique dans le service « [Gestion des accès](https://www.socialsecurity.be/site_fr/employer/applics/umoe/index.htm) ». Pour ce faire, consultez le manuel [Créer votre canal Webservice sur le portail de la Sécurité Sociale.pdf](https://www.socialsecurity.be/site_fr/general/helpcentre/rest/documents/pdf/webservices_creer_le_canal_FR.pdf).
 Le certificat à utiliser doit être un **certificat X.509**. Tout émetteur officiel est acceptable. Veuillez éviter d'utiliser un certificat auto-signé. Veillez à respecter le [format attendu](https://dev.eboxenterprise.be/docs/common/x509_certificate). Il est également important d'avoir **un certificat distinct pour chaque environnement** (acceptation, production).
+
 *P.S. Gestionnaire Local (GL)=Gestionnaire d’accès (GA) ; co-Gestionnaire Local (co-GL)=co-Gestionnaire d’accès (co-GA)*
 ### 1.4 Activer un canal Webservice
 Une fois l'utilisateur technique créé, votre GA/co-GA doit activer le canal « Webservice » dans le service « [Gestion des accès](https://www.socialsecurity.be/site_fr/employer/applics/umoe/index.htm) ». Référez-vous au manuel [Ajouter votre canal Webservice sur le portail de la Sécurité Sociale.pdf](https://www.socialsecurity.be/site_fr/general/helpcentre/rest/documents/pdf/webservices_ajouter_le_canal_FR.pdf) pour activer le canal.
