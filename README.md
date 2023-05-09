@@ -1,6 +1,9 @@
 ---
 title: e-Box Enterprise via Webservice
+sidebar_label: Onboarding
 ---
+
+![Diagram DocConsumer Onboarding Process](Documentation/DocConsumer Onboarding Processus.png)
 
 Plus envie de consulter les messages un par un ? Devenez Document Consumer. Vous pouvez consulter tous les messages que vous avez reçu dans l’e-Box Enterprise **en un seul clic** via un **Webservice REST**. Suivez le processus self-service ci-dessous afin de vous intégrer en tant que Document Consumer de l’e-Box Enterprise. L’intégration peut se faire en environnements Acceptance et Production. 
 
