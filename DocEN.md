@@ -1,6 +1,5 @@
 ---
 title: e-Box Enterprise via Webservice
-sidebar_label: Onboarding
 ---
 
 You don't want to check your messages one by one anymore? Become a Document Consumer. You can read all the messages you have received in your e-Box Enterprise with **a single click** via a **RESTful Webservice**. Follow the onboarding self-service process below to integrate as a Document Consumer of the e-Box Enterprise. The Onboarding can be done in both Acceptance and Production environments. 
