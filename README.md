@@ -9,7 +9,7 @@ Plus envie de consulter les messages un par un ? Devenez Document Consumer. Vous
 
 # Processus d'intégration pour devenir un Document Consumer (DocConsumer)
 
-Vous n’utilisez pas encore l’e-Box Enterprise ? Avant de pouvoir devenir un DocConsumer de l’e-Box Enterprise, vous devez créer un compte pour vous-même ou pour votre donneur d'ordre et paramétrer la sécurité. 
+Vous n’utilisez pas encore l’e-Box Enterprise ? Avant de pouvoir devenir un DocConsumer de l’e-Box Enterprise, vous devez créer un compte et paramétrer la sécurité. 
 Vous utilisez déjà l’e-Box Enterprise ? Voir directement section ***«1.2 Accepter les conditions d’utilisation»***
 
 
