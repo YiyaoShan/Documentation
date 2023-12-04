@@ -40,7 +40,7 @@ The certificate to be used must be a **X.509 certificate**. Any official issuer 
 
 ![Diagram Add ChaMan account](https://github.com/YiyaoShan/Documentation/blob/main/AjoutCOMPTEWS.png)
 
-![Diagram OAuth client ID](https://github.com/YiyaoShan/Documentation/blob/main/DiagramDocConsumerProcess.png)
+![Diagram OAuth client ID](https://github.com/YiyaoShan/Documentation/blob/main/CLIENTID.png)
 
 ## Step 2: OAuth configuration
 ### 2.1 enterprise registration in OAuth Server
