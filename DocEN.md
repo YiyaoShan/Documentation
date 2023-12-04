@@ -38,7 +38,7 @@ The certificate to be used must be a **X.509 certificate**. Any official issuer 
 4.Click on *Valider*/*Bevestigen*.
 5.After the validation, you can find your **OAuth client ID** under the section *Webservices Account*.
 
-![Diagram Add ChaMan account](https://github.com/YiyaoShan/Documentation/blob/main/DiagramDocConsumerProcess.png)
+![Diagram Add ChaMan account](https://github.com/YiyaoShan/Documentation/blob/main/AjoutCOMPTEWS.png)
 
 ![Diagram OAuth client ID](https://github.com/YiyaoShan/Documentation/blob/main/DiagramDocConsumerProcess.png)
 
