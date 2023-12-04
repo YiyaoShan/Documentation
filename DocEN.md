@@ -20,10 +20,6 @@ You already use the e-Box Enterprise? Go directly to the section ***1.2 Accept T
 ### 1.1 User account management
 In order to become a DocConsumer, you need an **Access Manager (AM)** or a **Co-Access Manager (Co-AM)** to activate and manage your technical "Webservice" channel. Follow the [Procédure pour la gestion des accès dans UMan.pdf](https://www.socialsecurity.be/site_fr/general/helpcentre/rest/documents/pdf/procedure_pour_gestion_des_acces_UMan_FR.pdf)/ [Procedure voor toegangsbeheer in UMan.pdf](https://www.socialsecurity.be/site_nl/general/helpcentre/rest/documents/pdf/procedure_voor_toegangsbeheer_in_uman_NL.pdf) manual to designate an AM/co-AM and manage user access.
 
-<table>
-<tr><td> Role EN</td><td>https://services.socialsecurity.be/REST/oauth/v5/token</td></tr>
-<tr><td>Audience (PRD)</td><td>https://services.socialsecurity.be/REST/oauth/v5/token</td></tr>
-</table>
 
 | Role EN | Role FR | Role NL |
 |------------|-----------|-----------|
