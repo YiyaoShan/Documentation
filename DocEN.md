@@ -30,7 +30,7 @@ In order to become a DocConsumer, you need an **Access Manager (AM)** or a **Co-
 In order to use e-Box as a Document Consumer, your enterprise must accept the terms of use for Document Consumer in your [**e-Box**](https://www.eboxenterprise.be/). Go to the section **Document Consumer** in the menu *Gestion e-Box*/ *Beheer e-Box*. You'll have to read the terms of use for Document Consumer, ***scroll to the end*** of the complete terms of use and accept the terms of use. Only **after the acceptation** can your enterprise create a technical account, which allows you to consult your messages as a Document Consumer.
 
 
-### 1.3 Creating a technical account in ChaMan
+### 1.3 Creating a Webservice account in ChaMan
 The AM/co-AM should now create a technical account in [ChaMan](https://chaman.socialsecurity.be/). To do this, follow the steps below:
 1.Connect yourself to your enterprise, thenclick on *Ajouter un compte Webservice*/*Een Webservice account toevoegen*.
 2.Choose 'REST' as type and give a name to your account.
