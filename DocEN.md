@@ -44,7 +44,7 @@ The certificate to be used must be a **X.509 certificate**. Any official issuer 
 ![Diagram OAuth client ID](https://github.com/YiyaoShan/Documentation/blob/main/CLIENTID.png)
 
 ## Step 2: OAuth configuration
-### 2.1 enterprise registration in OAuth Server
+### 2.1 Enterprise registration in OAuth Server
 The previous step involves the registration of your enterprise (identified by its BCE-KBO number) in the Social Security OAuth authorization server, thanks to which you get an **OAuth client ID** that is associated with your enterprise and your certificate, allowing you to generate an **OAuth AccessToken** which serves for consulting the e-Box Enterprise RESTful API. 
 
 ### 2.2 Retrieving the OAuth AccessToken
