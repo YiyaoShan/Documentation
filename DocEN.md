@@ -31,8 +31,8 @@ In order to use e-Box as a Document Consumer, your enterprise must accept the te
 
 
 ### 1.3 Creating a Webservice account in ChaMan
-The AM/co-AM should now create a technical account in [ChaMan](https://chaman.socialsecurity.be/). To do this, follow the steps below:
-1.Connect yourself to your enterprise, thenclick on *Ajouter un compte Webservice*/*Een Webservice account toevoegen*.
+The AM/co-AM should now create a Webservice account in [ChaMan](https://chaman.socialsecurity.be/). To do this, follow the steps below:
+1.Connect yourself to your enterprise, then click on *Ajouter un compte Webservice*/*Een Webservice account toevoegen*.
 2.Choose 'REST' as type and give a name to your account.
 3.Select **DocConsumer e-Box Enterprise**, upload your certificate and give it a name.
 The certificate to be used must be a **X.509 certificate**. Any official issuer is acceptable. Please avoid using a self-signed certificate. Make sure you follow the [expected format](https://dev.eboxenterprise.be/docs/common/x509_certificate). 
