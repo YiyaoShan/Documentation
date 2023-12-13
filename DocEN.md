@@ -7,7 +7,7 @@ All your e-Box messages can then be retrieved directly from your internal IT sys
 
 Follow the onboarding self-service process below to integrate as a **Document Consumer** of the e-Box Enterprise. Your enterprise can do some testings in the application *pre-prod* to ensure that everything is OK before using e-Box as a Document Consumer in Production. 
 
-![Diagram DocConsumer Onboarding Process](https://github.com/YiyaoShan/Documentation/blob/main/Processus Onboarding DocConsumer.png)
+![Diagram DocConsumer Onboarding Process](https://github.com/YiyaoShan/Documentation/blob/main/ProcessusOnboardingDocConsumer.png)
 
 
 # Onboarding Process to become a Document Consumer 
