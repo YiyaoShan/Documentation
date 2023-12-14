@@ -30,14 +30,14 @@ In order to become a DocConsumer, you need an **Access Manager (AM)** or a **Co-
 In order to use e-Box as a Document Consumer, your enterprise must accept the terms of use for Document Consumer in your [**e-Box**](https://www.eboxenterprise.be/). Go to the section **Document Consumer** in the menu ***Gestion e-Box***/ ***Beheer e-Box***. You'll have to read the terms of use for Document Consumer, ***scroll to the end*** of the complete terms of use and accept the terms of use. Only **after the acceptation** can your enterprise create a technical account, which allows you to consult your messages as a Document Consumer.
 
 
-### 1.3 Creating a Webservice account in ChaMan
-The AM/co-AM should now create a Webservice account in [ChaMan](https://chaman.socialsecurity.be/). To do this, follow the steps below:
-1.Connect yourself to your enterprise, then click on *Ajouter un compte Webservice*/*Een Webservice account toevoegen*.
-2.Choose 'REST' as type and give a name to your account.
-3.Select **DocConsumer e-Box Enterprise**, upload your certificate and give it a name.
-The certificate to be used must be a **X.509 certificate**. Any official issuer is acceptable. Please avoid using a self-signed certificate. Make sure you follow the [expected format](https://dev.eboxenterprise.be/docs/common/x509_certificate). 
-4.Click on *Valider*/*Bevestigen*.
-5.After the validation, you can find your **OAuth client ID** under the section *Webservices Account*.
+### 1.3 Creating a Webservice REST account in ChaMan
+The AM/co-AM should now create a Webservice REST account in [ChaMan](https://chaman.socialsecurity.be/). To do this, follow the steps below:
+1. Connect yourself to your enterprise, then click on *Ajouter un compte Webservice*/*Een Webservice account toevoegen*.
+2. Choose 'REST' as type and give a name to your account.
+3. Select **DocConsumer e-Box Enterprise**, upload your certificate and give it a name.
+The certificate to be used must be a **X.509 certificate**. Any official issuer is acceptable.
+4. Click on *Valider*/*Bevestigen*.
+5. After the validation, you can find your **OAuth client ID** under the section *Webservices Account*.
 
 ![Diagram Add ChaMan account](https://github.com/YiyaoShan/Documentation/blob/main/AjoutCOMPTEWS.png)
 
@@ -56,8 +56,7 @@ The [OAuth introspect](https://github.com/e-Box-Enterprise-Belgium/examples/tree
 <tr><td>Audience (PRD)</td><td>https://services.socialsecurity.be/REST/oauth/v5/token</td></tr>
 </table>
 
-As a Document Consumer, your AccessToken will contain the necessary scopes to perform all possible requests concerning your e-Box:
-- **Provider Registry** (``scope:documentmanagement:ebox:enterprise:federation-rest:registry``) to get the list of Document Providers.
+As a Document Consumer, your AccessToken will contain the necessary scope to perform all possible requests concerning your e-Box:
 - **documentconsumer** (``scope:document:management:consult:ws-eboxrestentreprise:documentconsumer``) to get and perform authorized actions on all messages of your e-Box ;
 
 
@@ -68,8 +67,13 @@ More info :
 
 
 ## Step 3: e-Box Enterprise consultation via REST Webservice
-### 3.1 Find the Document Providers
-Once you have obtained your token, you can find the list of Document Providers by making a GET request to the Provider Registry (don't forget to use the AccessToken retrieved in the previous step):
+### 3.1 Testings via the Pre-Prod URL
+Once you have obtained your token, for security reasons, you can do some testings on the consultation of your messages via the Pre-Prod URL before consulting your messages in Production as a Document Consumer(don't forget to use the AccessToken retrieved in the previous step): ``https://services-sim.socialsecurity.be/REST/ebox/enterprise/messageRegistry/consultationIntegrationTest/v3/``. 
+
+The consultation of messages is done via an HTTP ***GET*** through all the methods that start with ```/ebox``` defined in [MESSAGE REGISTRY SERVICE](https://dev.eboxenterprise.be/docs/spec/specifications)  of e-Box. This specification is available in ``.yaml`` format. Thus, a DocConsumer can not only view his messages, but also the ReferenceData. The methods in the *"publication"* section are only available for the Document Sender and the Document Provider.
+
+### 3.2 Find the Document Providers
+If the testings are okay, you can then find the list of Document Providers by making a GET request to the Provider Registry:
 | Environment| URL Provider Registry                                                                     |
 |------------|------------------------------------------------------------------------------------------------|
 | Production | ``https://services.socialsecurity.be/REST/ebox/enterprise/federation/v1/messageProviders``     |
@@ -80,8 +84,8 @@ In the response, you will find our Document Provider:
 |------------|-------------------------------------------------------------------------------------|
 | Production | ``https://services.socialsecurity.be/REST/ebox/enterprise/messageRegistry/v2/``      |
 
-### 3.2 Consulting your e-Box Enterprise via REST Webservice
-The consultation of your e-Box is done via an HTTP ***GET*** through all the methods that start with ```/ebox``` defined in [MESSAGE REGISTRY SERVICE](https://dev.eboxenterprise.be/docs/spec/specifications)  of e-Box. This specification is available in ``.yaml`` format. Thus, a DocConsumer can not only view his messages, but also the ReferenceData. The methods in the *"publication"* section are only available for the Document Sender and the Document Provider.
+### 3.3 Consulting your e-Box Enterprise via Webservice REST
+Now that evernthing is okay, you can consult your e-Box Enterprise via its Webservice REST in Production as a Document Consumer.
 
 Some points of attention:
 - Messages will be considered as read when the main content has been retrieved. On the e-Box Enterprise frontend, the visual distinction is the bolding ("unread") or not ("read") of the message title.
