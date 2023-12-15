@@ -42,7 +42,7 @@ The certificate to be used must be a **X.509 certificate**. Any official issuer 
 
 ## Step 2: OAuth configuration
 ### 2.1 Enterprise registration in OAuth Server
-The previous step involves the registration of your enterprise (identified by its BCE-KBO number) in the Social Security OAuth authorization server, thanks to which you get an **OAuth client ID** that is associated with your enterprise and your certificate, allowing you to generate an **OAuth AccessToken** which serves for consulting the e-Box Enterprise RESTful API. 
+The previous step involves the registration of your enterprise (identified by its BCE-KBO number) in the Social Security OAuth authorization server, thanks to which you get an **OAuth client ID** that is associated with your enterprise and your certificate, allowing you to generate an **OAuth AccessToken** which serves for consulting the e-Box Enterprise RESTful Webservice. 
 
 ### 2.2 Retrieving the OAuth AccessToken
 The Social Security’s RESTful Webservice is highly secured. Before you can access to the e-Box Enterprise RESTful Webservice, you must request an OAuth AccessToken from the OAuth authorization server. 
@@ -54,7 +54,7 @@ The [OAuth introspect](https://github.com/e-Box-Enterprise-Belgium/examples/tree
 </table>
 
 As a Document Consumer, your AccessToken will contain the necessary scope to perform all possible requests concerning your e-Box:
-- **documentconsumer** (``scope:document:management:consult:ws-eboxrestentreprise:documentconsumer``) to get and perform authorized actions on all messages of your e-Box ;
+- **documentconsumer** (``scope:document:management:consult:ws-eboxrestentreprise:documentconsumer``) to get and perform authorized actions on all messages of your e-Box.
 
 
 More info :
@@ -65,7 +65,7 @@ More info :
 
 ## Step 3: e-Box Enterprise consultation via REST Webservice
 ### 3.1 Testings via the Pre-Prod URL
-Once you have obtained your token, for security reasons, you can do some testings on the consultation of your messages via the Pre-Prod URL before consulting your messages in Production as a Document Consumer(don't forget to use the AccessToken retrieved in the previous step): ``https://services-sim.socialsecurity.be/REST/ebox/enterprise/messageRegistry/consultationIntegrationTest/v3/``. 
+Once you have obtained your token, for security reasons, you can do some testings on the consultation of your messages via the Pre-Prod URL before consulting your messages in Production as a Document Consumer(don't forget to use the AccessToken retrieved in the previous step): ``https://services-sim.socialsecurity.be/REST/ebox/enterprise/messageRegistry/consultationIntegrationTest/v3``. 
 
 The consultation of messages is done via an HTTP ***GET*** through all the methods that start with ```/ebox``` defined in [MESSAGE REGISTRY SERVICE](https://dev.eboxenterprise.be/docs/spec/specifications)  of e-Box. This specification is available in ``.yaml`` format. Thus, a DocConsumer can not only view his messages, but also the ReferenceData. The methods in the *"publication"* section are only available for the Document Sender and the Document Provider.
 
