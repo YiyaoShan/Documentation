@@ -2,7 +2,7 @@
 title: e-Box Enterprise via Webservice
 ---
 
-Follow the onboarding self-service process below to integrate as a **Document Consumer** of the e-Box Enterprise. Your enterprise can do some testings with the *pre-prod* URL to ensure that everything is OK before using e-Box as a Document Consumer in Production. 
+Follow the onboarding self-service process below to integrate as a **Document Consumer** of the e-Box Enterprise. Your enterprise can do some testings with the *pre-prod* URL to ensure that everything is OK before using e-Box as a Document Consumer in Production. Attention, the onboarding as a Document Consumer is irreversible.
 
 ![Diagram DocConsumer Onboarding Process](https://github.com/YiyaoShan/Documentation/blob/main/ProcessusOnboarding.png)
 
