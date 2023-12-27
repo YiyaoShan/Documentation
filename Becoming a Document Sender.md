@@ -11,13 +11,15 @@ The authentication has to be done via an [OAuth2 token request](#getting-an-oaut
 ## Avoid duplicate publications
 When publishing messages, it's important to avoid duplicate publications. To do this, it's recommended to use ***Idempotency-Key*** in the HTTP request header for each publication.
 
-Idempotency-Key is an Item Structured Header [RFC8941](https://www.rfc-editor.org/info/rfc8941). Its value MUST be a String. 
+Idempotency-Key is an Item Structured Header [RFC8941](https://www.rfc-editor.org/info/rfc8941). The header is case-insensitive. Its value MUST be a String. 
 It is RECOMMENDED that UUID [RFC4122](https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-01.html#RFC4122) or a similar random identifier be used as an idempotency key.
 
 Here is an example of the usage of *Idempotency-Key*:
 ``Idempotency-Key: "8e03978e-40d5-43e8-bc93-6894a57f9324"``
 
 A ***unique Idempotency-Key*** per sender application can be used to identify an unique publication. A second attempt would end up in code ```409 Conflict```.
+Attention that the Webservice doesn't verify the content or the business data of messages. A publication is considered as a duplicate if it uses the same **Idempotency-Key, institution, and sender application**.
+it's the Document Sender's responsibility to take into account this aspect.
 
 
 ## Minimal publication example
