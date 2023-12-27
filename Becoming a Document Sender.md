@@ -19,7 +19,8 @@ Here is an example of the usage of *Idempotency-Key*:
 
 
 A ***unique Idempotency-Key*** per sender application can be used to identify a unique publication. A second attempt would end up in code ```409 Conflict```.
-Attention that the Webservice doesn't verify the content or the business data of messages. A publication is considered as a duplicate if it uses the same **Idempotency-Key, institution, and sender application** as another published message.
+
+Attention that the content or the business data of messages aren't verified. A publication is considered as a duplicate if it uses the same **Idempotency-Key, institution, and sender application** as another published message.
 It's the Document Sender's responsibility to take into account this aspect.
 
 ## Minimal publication example
