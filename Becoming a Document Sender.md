@@ -17,7 +17,7 @@ It is RECOMMENDED that UUID [RFC4122](https://www.ietf.org/archive/id/draft-ietf
 Here is an example of the usage of *Idempotency-Key*:
 ``Idempotency-Key: "8e03978e-40d5-43e8-bc93-6894a57f9324"``
 
-For each publication, the Document Sender SHOULD send a **single and unique** idempotency key in the HTTP Idempotency-Key request header field. The Idempotency-Key used in one request MUST NOT be reused with another request with a different request payload.
+A ***unique Idempotency-Key*** per sender application can be used to identify an unique publication. A second attempt would end up in code ```409 Conflict```.
 
 
 ## Minimal publication example
