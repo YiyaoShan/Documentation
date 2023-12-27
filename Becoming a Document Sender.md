@@ -18,10 +18,9 @@ Here is an example of the usage of *Idempotency-Key*:
 ``Idempotency-Key: "8e03978e-40d5-43e8-bc93-6894a57f9324"``
 
 
-A ***unique Idempotency-Key*** per sender application can be used to identify a unique publication. A second attempt would end up in code ```409 Conflict```.
+A ***unique Idempotency-Key*** per **sender application** can be used to identify a **unique publication**. A second attempt would be considered as a duplicate, ending up in code ```409 Conflict```.
 
-Attention that the content or the business data of messages aren't verified. A publication is considered as a duplicate if it uses the same **Idempotency-Key, institution, and sender application** as another published message.
-It's the Document Sender's responsibility to take into account this aspect.
+Attention that the content or the business data of messages aren't verified. Thus, even if the business data or content is different, as long as the *sender, sender application, and Idempotency-Key* are the same as another published message, the message would be considered as a duplicate. **It's the Document Sender's responsibility to take into account this aspect.**
 
 ## Minimal publication example
 
