@@ -10,9 +10,12 @@ The authentication has to be done via an [OAuth2 token request](#getting-an-oaut
 
 ## Avoid duplicate publication
 In order to avoid duplicate publication requests, it's recommended to use ***Idempotency-Key*** in the HTTP request header for each publications.
-Idempotency-Key is an Item Structured Header ``[RFC8941](https://www.rfc-editor.org/info/rfc8941)``. Its value MUST be a String. It is RECOMMENDED that UUID ``[RFC4122](https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-01.html#RFC4122)`` or a similar random identifier be used as an idempotency key.
+
+Idempotency-Key is an Item Structured Header [RFC8941](https://www.rfc-editor.org/info/rfc8941). Its value MUST be a String. 
+It is RECOMMENDED that UUID [RFC4122](https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-01.html#RFC4122) or a similar random identifier be used as an idempotency key.
 Here is an example of the usage of *Idempotency-Key*:
 ``Idempotency-Key: "8e03978e-40d5-43e8-bc93-6894a57f9324"``
+
 For each publication, the Document Sender SHOULD send a **single and unique** idempotency key in the HTTP Idempotency-Key request header field. The Idempotency-Key used in one request MUST NOT be reused with another request with a different request payload.
 
 
