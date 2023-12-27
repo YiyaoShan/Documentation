@@ -13,6 +13,7 @@ In order to avoid duplicate publication requests, it's recommended to use ***Ide
 
 Idempotency-Key is an Item Structured Header [RFC8941](https://www.rfc-editor.org/info/rfc8941). Its value MUST be a String. 
 It is RECOMMENDED that UUID [RFC4122](https://www.ietf.org/archive/id/draft-ietf-httpapi-idempotency-key-header-01.html#RFC4122) or a similar random identifier be used as an idempotency key.
+
 Here is an example of the usage of *Idempotency-Key*:
 ``Idempotency-Key: "8e03978e-40d5-43e8-bc93-6894a57f9324"``
 
