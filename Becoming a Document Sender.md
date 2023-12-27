@@ -17,10 +17,10 @@ It is RECOMMENDED that UUID [RFC4122](https://www.ietf.org/archive/id/draft-ietf
 Here is an example of the usage of *Idempotency-Key*:
 ``Idempotency-Key: "8e03978e-40d5-43e8-bc93-6894a57f9324"``
 
-A ***unique Idempotency-Key*** per sender application can be used to identify an unique publication. A second attempt would end up in code ```409 Conflict```.
-Attention that the Webservice doesn't verify the content or the business data of messages. A publication is considered as a duplicate if it uses the same **Idempotency-Key, institution, and sender application**.
-it's the Document Sender's responsibility to take into account this aspect.
 
+A ***unique Idempotency-Key*** per sender application can be used to identify a unique publication. A second attempt would end up in code ```409 Conflict```.
+Attention that the Webservice doesn't verify the content or the business data of messages. A publication is considered as a duplicate if it uses the same **Idempotency-Key, institution, and sender application** as another published message.
+It's the Document Sender's responsibility to take into account this aspect.
 
 ## Minimal publication example
 
